@@ -1,5 +1,9 @@
 $('a').click(function(event){
     event.preventDefault();
+    if(!$(this).hasClass('btn')){
+        $('a').removeClass('active disabled');
+        $(this).addClass('active disabled');
+    }
     controleDeRotas($(this).attr("href"));
 });
 

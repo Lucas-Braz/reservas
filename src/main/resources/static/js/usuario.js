@@ -1,5 +1,3 @@
-$("#enviar").click(cadastrarUsuario);
-
 function cadastrarUsuario(){
     let nome = $("#nome").val();
     let matricula = $("#matricula").val();
@@ -8,7 +6,7 @@ function cadastrarUsuario(){
 
     $.ajax({
         type: "POST",
-        url: "/cadastro",
+        url: "/cadastro/usuario",
         data: {
             nome: nome,
             matricula: matricula,
