@@ -22,6 +22,7 @@ function controleDeRotas(url){
         case "/edit/usuario":
             $.get(url, function(data){
                 $('#mainContainer').html(data);
+                $('#salvar').click(salvarEditUsuario);
             });
             break;
         default:
